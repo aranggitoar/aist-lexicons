@@ -24,5 +24,9 @@ Karena ada kemungkinan dari pihak MySword untuk membarui file kamus mereka, dari
 menyediakan data yang telah diolah, kami menyediakan sebuah skrip untuk
 mengunduh dan mengolah data dari file kamus MySword.
 
+Untuk menjalankan skrip ini Anda memerlukan `sqlite3`, `gzip`, dan `wget`.
+Kalau Anda menggunakan perangkat lain untuk mengolah file SQLite, mengolah file zip,
+dan mengunduh sesuatu, cukup ubah nama perangkat di skrip.
+
 Anda cukup menjalankannya seperti menjalankan skrip Bash pada umumnya dengan
 memanggil `./extract.sh`.
