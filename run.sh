@@ -1,4 +1,4 @@
-# extract.sh is a source material extractor.
+# run.sh is a MySword extended Strong's lexicon SQLite extractor.
 # Copyright (C) 2022  Aranggi J. Toar
 #
 # This program is free software; you can redistribute it and/or modify
