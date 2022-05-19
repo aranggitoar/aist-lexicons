@@ -93,7 +93,7 @@ while read line; do
   # 1. Append an opening bracket into the content variable, and
   # 2. Skip the iteration
   if [[ "$line" =~ relativeorder,word,data ]]; then
-    echo $'\n> Creating JSON file for the Hebrew lexicon.\n'
+    echo $'\n> Converting the Hebrew lexicon.\n'
     contents='{'
     continue
   fi
@@ -108,23 +108,34 @@ while read line; do
     break
   fi
 
-  # Extract contents of the "word" and "data" column, which are the
-  # Strong's numbers and lexicon entry
+  # Extract contents of the "word" and "data" column,
+  # which are the Strong's numbers and lexicon entry
   word="$(echo $line | awk -F ',' '{print $2}')"
-  data="$(echo $line | sed 's/.*,"\(.*\)$/\1/' | sed 's/\(.+\)"\(.+\)$/\1\\"\2/g' | sed 's/\//\\\//g')"
+  # Capture every character after the first comma and double quote until
+  # the end of line,
+  data="$(echo $line | sed 's/.*,"\(.*\)$/\1/' |
+    # then escape all backward slashes and forward slashes,
+    sed 's/\\/\\\\/g' | sed 's/\//\\\//g' | 
+    # then escape all double quotes except for the last one, as
+    # it will be the closing quote for the JSON object value.
+    sed 's/"/\\"/g' | sed 's/\\"$/"/g')"
 
   # If it is the first line of the Greek lexicon data,
   # 1. Write the whole content variable into the Hebrew lexicon
   #    output file, and
   # 2. Overwrite the content variable with the Strong's numbers as a
   #    JSON object key with a preceding opening bracket
+  # Else if it is the first line of the Hebrew lexicon data, append
+  # the Strong's numbers as a JSON object key
   # Else, append the Strong's numbers as a JSON object key with a
   # preceding comma into the content variable
   if [[ "$line" =~ .*,G1,.* ]]; then
     contents+='}'
     echo $contents >> ${ofn[0]}
-    echo $'\n> Creating JSON file for the Greek lexicon.\n'
+    echo $'\n> Converting the Greek lexicon.\n'
     contents='{"'$word'":"'
+  elif [[ "$line" =~ .*,H1,.* ]]; then
+    contents+='"'$word'":"'
   else
     contents+=',"'$word'":"'
   fi
