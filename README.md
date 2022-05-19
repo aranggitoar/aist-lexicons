@@ -13,13 +13,23 @@ kamus mereka
 Leksikon AIST dapat dikutip, digunakan secara bebas, dengan memberikan atribusi
 kepada [Benih Yang Baik](https://benihyangbaik.com).
 
+## **Format JSON Leksikon AIST**
+```json
+{
+  "H1": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'âb</strong></p> ...",
+  "H2": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'ab</strong></p> ...",
+  "H3": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'êb</strong></p> ...",
+  ...
+}
+```
+
 ## **Perkembangan**
 - ~~Data baru mulai dipersiapkan untuk dapat ditampilkan dan diterjemahkan
   melalui [*Editor Alkitab Interlinear Sederhana* (*Interlinear Bible Simple
   Editor*,
   **IBSE**)](https://github.com/benihyangbaik/interlinear-bible-simple-editor).~~
-  Data sudah siap digunakan.
-- Skrip sudah siap digunakan untuk mengambil dan mengolah data.
+  Data sudah siap digunakan, file-file JSON telah diverifikasi dengan
+  [jsonlint.com](https://www.jsonlint.com/).
 
 ## **Penggunaan**
 Cukup panggil `./unzip.sh` yang akan membuka arsip dengan perangkat `tar` dan
