@@ -22,14 +22,18 @@ kepada [Benih Yang Baik](https://benihyangbaik.com).
 - Skrip sudah siap digunakan untuk mengambil dan mengolah data.
 
 ## **Penggunaan**
-Karena ada kemungkinan dari pihak MySword untuk membarui file kamus mereka, daripada
-menyediakan data yang telah diolah, kami menyediakan sebuah skrip untuk
-mengunduh dan mengolah data dari file kamus MySword.
+Cukup panggil `./unzip.sh` yang akan membuka arsip dengan perangkat `tar` dan
+periksa isi direktori `./lexicons/`.
+
+Karena ada kemungkinan dari pihak MySword untuk membarui file kamus mereka,
+kami juga menyediakan sebuah skrip untuk mengunduh dan mengolah data dari file
+kamus MySword.
 
 Untuk menjalankan skrip ini Anda memerlukan `sqlite3`, `gzip`, `wget`, dan `dos2unix`.
 Kalau Anda menggunakan perangkat lain untuk mengolah file SQLite, mengolah file zip,
-mengunduh sesuatu, dan mengubah format file teks DOS/Windows menjadi Unix cukup
+mengunduh sesuatu, dan mengubah format file teks DOS/Windows menjadi Unix, cukup
 ubah nama perangkat di skrip.
 
 Anda cukup menjalankannya seperti menjalankan skrip Bash pada umumnya dengan
-memanggil `./run.sh`.
+memanggil `./run.sh`. Anda juga dapat mengecilkan ukurannya dengan memanggil
+`./zip.sh` yang akan mengkompres file dengan perangkat `tar` dan `gzip`.
