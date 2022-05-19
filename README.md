@@ -19,7 +19,6 @@ kepada [Benih Yang Baik](https://benihyangbaik.com).
   "H1": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'âb</strong></p> ...",
   "H2": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'ab</strong></p> ...",
   "H3": "<p>Original: <strong>אב</strong></p><p>Transliteration: <strong>'êb</strong></p> ...",
-  ...
 }
 ```
 
