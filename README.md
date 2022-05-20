@@ -46,3 +46,10 @@ ubah nama perangkat di skrip.
 Anda cukup menjalankannya seperti menjalankan skrip Bash pada umumnya dengan
 memanggil `./run.sh`. Anda juga dapat mengecilkan ukurannya dengan memanggil
 `./zip.sh` yang akan mengkompres file dengan perangkat `tar` dan `gzip`.
+
+## **Catatan Pengembangan**
+Arsip dari MySword yang digunakan sebagai sumber ada dalam bentuk SQLite.
+Sehingga sebenarnya arsip lain dari bentuk SQLite bisa diolah dengan skrip ini,
+tentunya dengan beberapa perubahan.
+1. Perubahan dalam variabel direktori hasil, file sumber, dan file hasil.
+2. Perubahan sedikit isi `while read line; do { ... }; done < $sumber`.
