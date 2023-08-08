@@ -1,9 +1,11 @@
 # **Leksikon AIST**
 
+**PROYEK TERBENGKALAI**
+
 _Read in [Indonesian](https://github.com/benihyangbaik/aist-lexicons#readme), [English](https://github.com/benihyangbaik/aist-lexicons/blob/main/README.en.md), [Brazillian Portuguese](https://github.com/benihyangbaik/aist-lexicons/blob/main/README.ptbr.md)._
 
 Proyek ini adalah perpanjangan dari [_Alkitab Interlinear Sumber Terbuka_
-(**AIST**)](https://github.com/benihyangbaik/aist) yang akan menerjemahkan
+(**AIST**)](https://github.com/aranggitoar/aist) yang akan menerjemahkan
 [Leksikon Ibrani/Yunani Strong's, Ibrani Brown-Driver-Briggs, dan Yunani Thayer
 dengan Referensi Ayat dari
 MySword](https://mysword-bible.info:4443/download/getfile.php?file=strong.dct.mybible.gz).
@@ -29,11 +31,7 @@ kepada [Benih Yang Baik](https://benihyangbaik.com).
 
 ## **Perkembangan**
 
-- ~~Data baru mulai dipersiapkan untuk dapat ditampilkan dan diterjemahkan
-  melalui [_Editor Alkitab Interlinear Sederhana_ (_Interlinear Bible Simple
-  Editor_,
-  **IBSE**)](https://github.com/benihyangbaik/interlinear-bible-simple-editor).~~
-  Data sudah siap digunakan, file-file JSON telah diverifikasi dengan
+- Data sudah siap digunakan, file-file JSON telah diverifikasi dengan
   [jsonlint.com](https://www.jsonlint.com/).
 - Leksikon tidak akan diterjemahkan dengan IBSE. Keputusan ini didasari dua
   pertimbangan. Pertama, waktu yang akan dihabiskan untuk pengembangan fitur
@@ -41,7 +39,7 @@ kepada [Benih Yang Baik](https://benihyangbaik.com).
   perangkat lunak penerjemahan ini benar-benar sederhana, maka lebih baik kalau
   fungsinya memang satu saja. Sehingga kami menciptakan [_Editor Leksikon
   Alkitab Sederhana_ (_Bible Lexicon Simple Editor_,
-  **BLSE**)](https://git.sr.ht/~ppook/blse).
+  **BLSE**)](https://git.sr.ht/~toar/blse).
 - Perkembangan penerjemahan leksikon dapat dilihat dalam `./catatan/PERKEMBANGAN.md`.
   Sampai selesai diterjemahkan, leksikon tidak akan disertakan dalam repositori
   ini. Kalau Anda ingin berkontribusi, hubungi kami di info@benihyangbaik.com.
